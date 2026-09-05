@@ -692,26 +692,25 @@
         }
 
         .logo-placeholder {
-            width: 80px;
-            height: 80px;
-            background: linear-gradient(135deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.1));
-            border: 1px dashed rgba(255, 255, 255, 0.2);
-            border-radius: 16px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 2rem;
-            transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-            transform-style: preserve-3d;
-            position: relative;
-        }
+  width: 80px;
+  height: 80px;
+  background: transparent;
+  border: none;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+  transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transform-style: preserve-3d;
+  position: relative;
+}
 
-        .logo-placeholder::before {
-            content: 'LOGO';
-            font-size: 0.625rem;
-            color: rgba(255, 255, 255, 0.3);
-            letter-spacing: 0.2em;
-        }
+.logo-placeholder img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
 
         .pillar:hover .logo-placeholder {
             transform: translateZ(60px) scale(1.4) rotateY(35deg) rotateX(15deg);
